@@ -49,7 +49,8 @@ async function start() {
         mongoose.connection.once('open', () => {
             initDatabase()
         })
-        await mongoose.connect(config.get('mongoUri'))
+        //await mongoose.connect(config.get('mongoUri'))
+        await mongoose.connect("mongodb+srv://dbuser:dbuser1234@cluster0.muwmafw.mongodb.net/?retryWrites=true&w=majority")
         console.log(chalk.green("MongoDB connected."))
         app.listen(8080, () =>
                 console.log(chalk.green(`Server has been started on port ${PORT}`))
