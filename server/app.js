@@ -25,7 +25,8 @@ app.use('/api', routes)
 // app.use(cors(corsOptions))
 app.use(cors())
 
-const PORT = config.get('port') ?? 8008
+//const PORT = config.get('port') ?? 8080
+const PORT = 8080
 
 // if (process.env.NODE_ENV === 'production') {
 //     console.log('production')
