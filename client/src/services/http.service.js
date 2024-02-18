@@ -1,7 +1,7 @@
 import axios from 'axios'
 // import logger from './log.service'
 import { toast } from 'react-toastify'
-import configFile from '../config_back1.json'
+import configFile from '../config.json'
 import localStorageService from './localStorage.service'
 // import { httpAuth } from '../hooks/useAuth'
 import { authService } from './auth.service'
